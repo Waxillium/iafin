@@ -1,8 +1,8 @@
 {
-    "id": "b071fc2e-c7c8-4e0e-9993-6810c15fafd0",
+    "id": "aa2355fd-a7d2-4978-af95-70a8622daf39",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "o_player",
+    "name": "o_game_object",
     "eventList": [
         
     ],
