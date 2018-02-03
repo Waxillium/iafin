@@ -1,8 +1,8 @@
 {
-    "id": "c4ac3e95-220c-442d-bbd7-d364294b1a02",
+    "id": "c4223b92-0d4f-4894-bb9a-7e8a45349d8d",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "o_bullet_pattern",
+    "name": "o_enemy_parent",
     "eventList": [
         
     ],

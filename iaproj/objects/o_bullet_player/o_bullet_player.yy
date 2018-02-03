@@ -1,14 +1,14 @@
 {
-    "id": "c4ac3e95-220c-442d-bbd7-d364294b1a02",
+    "id": "0c2ffe1f-f407-4466-95fb-6bd8ef3d1a24",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "o_bullet_pattern",
+    "name": "o_bullet_player",
     "eventList": [
         
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "aa2355fd-a7d2-4978-af95-70a8622daf39",
+    "parentObjectId": "e3bc9e28-e094-4a57-8776-ce67b2106483",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -24,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "00000000-0000-0000-0000-000000000000",
+    "spriteId": "8cf92bbf-f2e1-49d0-b3c2-0e79964b1ff3",
     "visible": true
 }

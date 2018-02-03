@@ -1,8 +1,8 @@
 {
-    "id": "c4ac3e95-220c-442d-bbd7-d364294b1a02",
+    "id": "e3bc9e28-e094-4a57-8776-ce67b2106483",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "o_bullet_pattern",
+    "name": "o_player_group_parent",
     "eventList": [
         
     ],
