@@ -1,5 +1,4 @@
 spawn = 4;
 offset = 10;
-for(var i = 0; i < spawn; i++){
-	scr_enemy_create(offset + i*(room_width-offset*2)/(spawn-1), -100, o_diver_basic);	
-}
+enemy = o_diver_basic;
+scr_wave_place(spawn, offset, enemy);

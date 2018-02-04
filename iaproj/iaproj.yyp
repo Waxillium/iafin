@@ -399,6 +399,14 @@
             }
         },
         {
+            "Key": "95e15b0d-be13-4a69-b01e-c1fd79d4317e",
+            "Value": {
+                "id": "7f07d926-61a4-46e2-9b7f-8a53757689ad",
+                "resourcePath": "scripts\\scr_wave_place\\scr_wave_place.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "968c4695-c2ae-4475-9f94-f7719de944eb",
             "Value": {
                 "id": "5064b549-ddd1-4d62-b9a5-ba91949d985b",
@@ -636,7 +644,8 @@
         "871d9ba9-c6eb-4ff9-aa6c-47cb0524eabe",
         "25e5cc0d-e1e6-468d-aa12-2efa7aec78ed",
         "aac6371b-f781-4fbf-8de4-9d5c2da7c11c",
-        "6af11d13-da3b-4bc7-8970-7d158c27a3a8"
+        "6af11d13-da3b-4bc7-8970-7d158c27a3a8",
+        "95e15b0d-be13-4a69-b01e-c1fd79d4317e"
     ],
     "tutorial": ""
 }
