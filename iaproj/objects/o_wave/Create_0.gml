@@ -1,2 +1,2 @@
 timer = 0;
-list = noone;
+list = ds_list_create();

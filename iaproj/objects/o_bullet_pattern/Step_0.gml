@@ -21,6 +21,7 @@ else{
 			bul.wiggle = wiggle;
 			bul.wiggle_interval = wiggle_interval;
 			bul.velocity = bullet_speed;
+			bul.image_index = bullet_sprite_index;
 		}
 		angle += angle_change;
 	}

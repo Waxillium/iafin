@@ -1,1 +1,1 @@
-draw_sprite_ext(spr_bullet, 0, x, y, 1, 1, image_angle, color, 1);
+draw_sprite_ext(s_bullet_enemy, 0, x, y, 1, 1, image_angle, color, 1);

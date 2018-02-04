@@ -6,7 +6,7 @@
     "children": [
         "1f6d01ec-56b9-4b2b-8c94-2e3879c8d9de",
         "1e7f19dd-dadb-4da4-85c3-1f2c8edba580",
-        "b14a5cc8-0ad5-4871-943c-0a1fcc43aafc"
+        "57912be7-bd33-4c3c-a0c0-0847ef390b9d"
     ],
     "filterType": "GMSprite",
     "folderName": "Player Group",

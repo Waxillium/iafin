@@ -8,20 +8,21 @@ if(!point_in_rectangle(x, y, 0, 0, room_width, room_height)){//destroy self if g
 }
 #endregion
 #region bullet combining and explosion
-var col = instance_place(x,y, o_bullet);
+var col = instance_place(x,y, o_bullet_player);
 if(instance_exists(col)){
 	if((image_xscale + col.image_xscale)>maxscale){
 		for(var i=0; i<explosiveness; i++){
-			var bul = instance_create_layer(x, y, "Instances", o_bullet);
+			var bul = instance_create_layer(x, y, "Instances", o_bullet_player);
 			var ang = 360/explosiveness*i + 90;
 			bul.image_angle = ang;
-			var v = -7;
+			var v = -5;
 			bul.xvel = lengthdir_x(v, ang);
 			bul.yvel = lengthdir_y(v, ang);
 			bul.color = color;
 			bul.combinable = false;
 		}
 		instance_destroy();
+		instance_destroy(col);
 	} else if(combinable && col.combinable){
 		image_xscale += col.image_xscale;
 		image_yscale += col.image_yscale;
