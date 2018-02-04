@@ -1,10 +1,10 @@
-if(keyboard_check_pressed(vk_escape)){//if press escape, pause game
+if(!global.gameover && keyboard_check_pressed(vk_escape)){//if press escape, pause game
 	scr_pause();	
 }
 if(global.paused){//if paused, display what was last on screen
 	draw_sprite(global.pause_sprite, 0, 0, 0);
 	var pline = "[GAME PAUSED]\nESC TO RESUME\nR TO RESTART";
-	var gline = "[GAME OVER]\nR TO RESTART";
+	var gline = "[GAME OVER]\nR TO RESTART\nSCORE: "+ string(global.points);
 	draw_set_font(font0);
 	draw_set_halign(fa_center);
 	draw_set_color(c_white);

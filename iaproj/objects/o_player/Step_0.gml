@@ -14,7 +14,7 @@ if(y<0) y=0; if(y>room_height) y = room_height;
 #region shoot bullets
 var xvel = (x-xprevious)/global.dt; //get horizontal velocity of player
 if(keyboard_check(vk_space) && bullet_timer==0){
-	bullet_timer = 6;
+	bullet_timer = 8;
 	var bul = instance_create_layer(x, y, "Instances", o_bullet_player);
 	bul.color = color; 
 	bul.xvel = xvel; //give a portion of the players horizontal velocity to the bullet

@@ -5,12 +5,12 @@
     "name": "o_pause",
     "eventList": [
         {
-            "id": "8ffc4861-0a1f-49c4-84bd-6cbd7ffee267",
+            "id": "4452ddd1-a32b-403f-8b62-3ad8e9aa8915",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
+            "enumb": 64,
             "eventtype": 8,
             "m_owner": "67e5035b-4069-428b-b9f4-148e74f45d9c"
         }

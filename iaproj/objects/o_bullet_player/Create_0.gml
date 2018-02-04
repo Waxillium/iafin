@@ -2,7 +2,7 @@
 color = noone;
 image_xscale = 1/25;
 image_yscale = 1/25;
-maxscale = 1/3;
+maxscale = .27;
 //initialize behavior variables
 xvel = 0;
 yvel = -5;
