@@ -26,7 +26,7 @@ trail_timer += global.dt;
 while(trail_timer>=1){
 	var point = array_create(2, 0);
 	point[0] = x;
-	point[1] = y+12;
+	point[1] = y+15;
 	ds_list_add(trail, point);
 	trail_timer--;
 }

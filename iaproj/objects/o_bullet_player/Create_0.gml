@@ -1,8 +1,8 @@
 //initialize image variables
 color = noone;
-image_xscale = 1/25;
-image_yscale = 1/25;
-maxscale = 1;
+image_xscale = 1/10;
+image_yscale = 1/10;
+maxscale = 10;
 //initialize behavior variables
 xvel = 0;
 yvel = -6;

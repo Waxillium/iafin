@@ -1,23 +1,23 @@
 /// @description creates a bullet pattern object
-/// @func scr_bullet_pattern_create(num_bullets, bullet_sprite_index, angle, angle_change, angle_range, fire_rate, wiggle, wiggle_interval, bullet_speed)
-/// @param num_bullets
+/// @func scr_bullet_pattern_create(bullet_sprite_index, num_bullets, fire_rate, bullet_speed, angle, angle_range, angle_change,wiggle, wiggle_interval)
 /// @param bullet_sprite_index
-/// @param angle
-/// @param angle_change
-/// @param angle_range
+/// @param num_bullets
 /// @param fire_rate
+/// @param bullet_speed
+/// @param angle
+/// @param angle_range
+/// @param angle_change
 /// @param wiggle
 /// @param wiggle_interval
-/// @param bullet_speed
 var inst = instance_create_layer(x, y, "Instances", o_bullet_pattern);
-inst.num_bullets = argument[0];
-inst.bullet_sprite_index = argument[1];
-inst.angle = argument[2];
-inst.angle_change = argument[3];
-inst.angle_range = argument[4];
-inst.fire_rate = argument[5];
-inst.wiggle = argument[6];
-inst.wiggle_interval = argument[7];
-inst.bullet_speed = argument[8];
+inst.bullet_sprite_index = argument[0];
+inst.num_bullets = argument[1];
+inst.fire_rate = argument[2];
+inst.bullet_speed = argument[3];
+inst.angle = argument[4];
+inst.angle_range = argument[5];
+inst.angle_change = argument[6];
+inst.wiggle = argument[7];
+inst.wiggle_interval = argument[8];
 inst.target = self;
 return inst;

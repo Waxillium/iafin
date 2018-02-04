@@ -14,4 +14,4 @@ for(var i = 0; i<ds_list_size(trail)-1; i++){
 #endregion
 //draws the pulsating circle behind the player
 var radius = scr_tsin(5, 8, 250, 0);
-draw_circle(x,y+12, radius, false);
+draw_circle(x,y+15, radius, false);
