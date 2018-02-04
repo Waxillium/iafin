@@ -15,4 +15,5 @@ if(!instance_exists(o_wave)){
 	} else{
 		current_wave = irandom_range(0, hl-1);
 	}
+	scr_wave_create(current_wave);
 }

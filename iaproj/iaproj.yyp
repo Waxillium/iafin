@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "01be20be-712a-499c-8b51-fb43b4e2e3de",
+            "Value": {
+                "id": "24766413-87dc-4ccc-aa46-892ef6a317a0",
+                "resourcePath": "objects\\o_diver_shooter\\o_diver_shooter.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "04920bf5-4120-418e-aef6-637481540880",
             "Value": {
                 "id": "454e4800-8a4d-4e7f-b1cc-24896d8199cc",
