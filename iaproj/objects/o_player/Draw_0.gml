@@ -2,7 +2,6 @@
 r = scr_tsin(0, 255, 1000, 0);
 color = make_color_rgb(r, g, b);
 draw_sprite_ext(s_player, 0, x,y, 1, 1, 0, color, 1);
-
 draw_set_color(make_color_rgb(r, g, b));
 #region draws the trail behind the player
 var width = 10;

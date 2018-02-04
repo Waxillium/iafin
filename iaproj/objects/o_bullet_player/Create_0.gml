@@ -1,0 +1,11 @@
+//initialize image variables
+color = noone;
+image_xscale = 1/25;
+image_yscale = 1/25;
+maxscale = 1;
+//initialize behavior variables
+xvel = 0;
+yvel = -6;
+combinable = true;
+explosiveness = 15;
+damage = 1;

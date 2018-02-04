@@ -194,7 +194,7 @@
             "Key": "67e5035b-4069-428b-b9f4-148e74f45d9c",
             "Value": {
                 "id": "570fc9ba-772c-4df5-bcdb-abc5b017a3d1",
-                "resourcePath": "objects\\o_illustrator\\o_illustrator.yy",
+                "resourcePath": "objects\\o_pause\\o_pause.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -235,6 +235,14 @@
             "Value": {
                 "id": "2e928742-0f53-4347-a51e-de460d484106",
                 "resourcePath": "objects\\o_stars\\o_stars.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "86d16905-13d4-4abf-9b9f-27a8e83664d4",
+            "Value": {
+                "id": "45afc9d9-cf3e-47e2-b88b-3c76bd1e0234",
+                "resourcePath": "objects\\o_background\\o_background.yy",
                 "resourceType": "GMObject"
             }
         },

@@ -7,10 +7,11 @@ if(global.paused){//if paused, display what was last on screen
 	var gline = "[GAME OVER]\nPRESS R TO RESTART";
 	draw_set_font(font0);
 	draw_set_halign(fa_center);
+	draw_set_color(c_white);
 	if(!global.gameover){
-		draw_text(room_width/2,room_height/2, pline);
+		draw_text_transformed(room_width/2,room_height/2, pline, 1, 1, 0);
 	} else if(global.gameover){
-		draw_text(room_width/2,room_height/2, gline);
+		draw_text_transformed(room_width/2,room_height/2, gline, 1, 1, 0);
 	}
 	draw_set_halign(fa_left);
 }

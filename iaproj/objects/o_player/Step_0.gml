@@ -4,7 +4,7 @@ left = (keyboard_check(vk_left) || keyboard_check(ord("A")));
 down = keyboard_check(vk_down) || keyboard_check(ord("S"));
 right = keyboard_check(vk_right) || keyboard_check(ord("D"));
 slow = keyboard_check(vk_shift);
-if(slow) spd = init/2 - 1; else spd = init;
+if(slow) spd = init/2; else spd = init;
 x = lerp(x, x+(spd*(right-left)), lerp_amt*global.dt);
 y = lerp(y, y+(spd*(down-up)), lerp_amt*global.dt);
 //prevent the player from moving out of the room
