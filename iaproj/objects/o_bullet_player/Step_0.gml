@@ -1,34 +1,9 @@
 #region movement
 y += yvel*global.dt;
 x += xvel*global.dt;
-if(combinable)
+if(image_angle = 0)
 xvel -= xvel * .1 * global.dt;//slow down the bullets x velocity over time
 if(!point_in_rectangle(x, y, 0, 0, room_width, room_height)){//destroy self if goes outside the screen
 	instance_destroy();
-}
-#endregion
-#region bullet combining and explosion
-var col = instance_place(x,y, o_bullet_player);
-if(instance_exists(col)){
-	if((image_xscale + col.image_xscale)>maxscale){
-		for(var i=0; i<explosiveness; i++){
-			var bul = instance_create_layer(x, y, "Instances", o_bullet_player);
-			var ang = (360/explosiveness*i) - 90;
-			bul.image_angle = ang + 90;
-			var v = -7;
-			bul.xvel = lengthdir_x(v, ang);
-			bul.yvel = lengthdir_y(v, ang);
-			bul.color = color;
-			bul.combinable = false;
-		}
-		instance_destroy();
-	} else if(combinable && col.combinable){
-		image_xscale += col.image_xscale;
-		image_yscale += col.image_yscale;
-		x = (x+col.x)/2;
-		y = (y+col.y)/2;
-		damage += col.damage;
-		instance_destroy(col);
-	}	
 }
 #endregion

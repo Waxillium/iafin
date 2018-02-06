@@ -1,6 +1,6 @@
 //if touches the player, increases the players points and deletes itself
 if(place_meeting(x,y, o_player)){
-	global.points++;
+	o_player.charge+=1;
 	instance_destroy();
 }
 //if the player is not holding down the left mouse button, goes to the player

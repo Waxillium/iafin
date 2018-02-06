@@ -1,0 +1,1 @@
+ds_list_delete(creator, ds_list_find_index(creator, self));

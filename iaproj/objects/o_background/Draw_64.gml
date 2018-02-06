@@ -1,6 +1,6 @@
 draw_set_color(c_white);
 draw_set_font(font0)
-var str = "SCORE: " + string(global.points) + "\nFPS:   " + string(fps) + "\nTIME:   " +string(get_timer()/1000000);
+var str = "SCORE: " + string(global.points) + "\nFPS:   " + string(fps) + "\nTIME:   " +string(global.time);
 var h = window_get_height();
 var w = window_get_width();
 var r = room_width/room_height;

@@ -14,12 +14,38 @@ if(y<0) y=0; if(y>room_height) y = room_height;
 #region shoot bullets
 var xvel = (x-xprevious)/global.dt; //get horizontal velocity of player
 if(keyboard_check(vk_space) && bullet_timer==0){
-	bullet_timer = 8;
+	bullet_timer = 5;
 	var bul = instance_create_layer(x, y, "Instances", o_bullet_player);
 	bul.color = color; 
 	bul.xvel = xvel; //give a portion of the players horizontal velocity to the bullet
 }
 bullet_timer -= min(global.dt, bullet_timer);
+if(keyboard_check(vk_enter) && charge>0){
+	charge_timer += global.dt/(60*3);
+}
+if(keyboard_check_released(vk_enter)){
+	#region bullet explosion
+	if(charge_timer>=global.maxscale){
+		for(var i=0; i<global.explosiveness; i++){
+			var bul = instance_create_layer(x, y+1, "Instances", o_bullet_player);
+			var ang = (360/global.explosiveness*i) - 90;
+			bul.image_angle = ang + 90;
+			var v = -8;
+			bul.xvel = lengthdir_x(v, ang);
+			bul.yvel = lengthdir_y(v, ang);
+			bul.color = color;
+		}
+		charge-=10;
+	#endregion
+	} else {
+		var bul = instance_create_layer(x, y, "Instances", o_bullet_player);
+		var c = charge_timer/global.maxscale;
+		bul.image_xscale = charge_timer;
+		bul.image_yscale = charge_timer;
+		charge -= c*10;
+	}
+	charge_timer = 0;
+}
 #endregion
 #region stores the player position variables for a trail to be drawn behind the player
 trail_timer += global.dt;

@@ -1,11 +1,8 @@
 //initialize image variables
-color = noone;
+color = o_player.color;
 image_xscale = 1/25;
 image_yscale = 1/25;
-maxscale = .27;
 //initialize behavior variables
 xvel = 0;
-yvel = -5;
-combinable = true;
-explosiveness = 15;
+yvel = -6;
 damage = 1;
