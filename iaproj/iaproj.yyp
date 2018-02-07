@@ -559,6 +559,14 @@
             }
         },
         {
+            "Key": "c04031eb-620d-404d-b80b-a0f360e83b8d",
+            "Value": {
+                "id": "cb458e0b-717d-42ab-8983-a291f9678404",
+                "resourcePath": "objects\\o_gui\\o_gui.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "c3bad219-6a7d-4e87-8014-0280fb844640",
             "Value": {
                 "id": "3f498f51-49ae-49db-9216-d1788de644ff",

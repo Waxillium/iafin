@@ -6,7 +6,7 @@ if(global.paused && keyboard_check_pressed(ord("R"))){
 	game_restart();
 	global.time = 0;
 }
-global.time += global.dt/60;
+if(!global.paused) global.time += global.dt/60;
 if(!instance_exists(o_wave)){
 	wavenum++;
 	if(wavenum<el){
