@@ -13,4 +13,5 @@ instance_create_layer(room_width/2, room_height/2, "Instances", o_player);
 instance_create_layer(x, y, "Instances", o_game_variables);
 instance_create_layer(x, y, "Instances", o_stars);
 instance_create_layer(x, y, "Instances", o_background);
-display_set_gui_size(room_width, room_height);
+//display_set_gui_size(room_width, room_height);
+display_set_gui_maximise();
