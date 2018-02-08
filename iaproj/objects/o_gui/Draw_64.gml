@@ -32,8 +32,8 @@ if(global.paused){//if paused, display what was last on screen
 }
 #endregion
 #region setup gui window variables
-var h = window_get_height();
-var w = window_get_width();
+var h = display_get_gui_height();
+var w = display_get_gui_width();
 var r = room_width/room_height;
 var scale = 1; if(w>h) scale = h/room_height; else if(h>w) scale = w/room_width;
 var wid = 0;
@@ -48,18 +48,12 @@ if(w>h){
 	wid = (w-(scale*room_width));//draw the background colors ontop of the black bars on the sides of the game
 	draw_line_width_color(0, -1, 0, h+1, wid, bcolor, bcolor);
 	draw_line_width_color(wid+scale*room_width-1, -1, wid+scale*room_width-1, h+1, wid, bcolor, bcolor);
-	draw_line_width_color(wid/2, 0, wid/2, h, 1, lcolor, lcolor);//draw the play colors around the square of the game
-	draw_line_width_color(w-(wid/2)-1, 0, w-(wid/2)-1, h, 1, lcolor, lcolor);
-	draw_line_width_color(wid/2, 0, w-(wid/2), 0, 1, lcolor, lcolor);
-	draw_line_width_color(wid/2, h-1, w-(wid/2), h-1, 1, lcolor, lcolor);
+	draw_rectangle_color(wid/2, 1, w-wid/2, h-2, lcolor, lcolor, lcolor, lcolor, true);
 } else if (h>w){
 	wid = (h-(scale*room_width));
 	draw_line_width_color(0, 0, w, 0, wid, bcolor, bcolor);
 	draw_line_width_color(0, wid+scale*room_height-1, w, wid+scale*room_height-1, wid, bcolor, bcolor);
-	draw_line_width_color(0, wid/2, 0, h-wid/2, 1, lcolor, lcolor);
-	draw_line_width_color(w-1, wid/2, w-1, h-wid/2, 1, lcolor, lcolor);
-	draw_line_width_color(0, wid/2, w, wid/2, 1, lcolor, lcolor);
-	draw_line_width_color(0, h-wid/2-1, w, h-wid/2-1, 1, lcolor, lcolor);
+	draw_rectangle_color(0, wid/2, w, h-wid/2, lcolor, lcolor, lcolor, lcolor, true);
 }
 draw_set_color(c_white);
 draw_set_font(font0)
