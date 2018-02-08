@@ -263,14 +263,6 @@
             }
         },
         {
-            "Key": "67e5035b-4069-428b-b9f4-148e74f45d9c",
-            "Value": {
-                "id": "570fc9ba-772c-4df5-bcdb-abc5b017a3d1",
-                "resourcePath": "objects\\o_pause\\o_pause.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "6af11d13-da3b-4bc7-8970-7d158c27a3a8",
             "Value": {
                 "id": "38337445-1beb-4856-9304-5ecb73fe22e3",
@@ -492,6 +484,14 @@
                 "id": "9456cf18-31eb-4941-9f47-2fe563f52eed",
                 "resourcePath": "scripts\\scr_tsin\\scr_tsin.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "ac095406-a04e-4b7a-af5d-b61665f2b801",
+            "Value": {
+                "id": "4c19df1f-6ca9-4fd9-bc5c-c0f3bd361c79",
+                "resourcePath": "objects\\o_wave_controller\\o_wave_controller.yy",
+                "resourceType": "GMObject"
             }
         },
         {

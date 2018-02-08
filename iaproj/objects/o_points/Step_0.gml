@@ -1,6 +1,7 @@
 //if touches the player, increases the players points and deletes itself
 if(place_meeting(x,y, o_player)){
 	o_player.charge+=1;
+	if(o_player.charge>30) o_player.charge = 30;
 	instance_destroy();
 }
 //if the player is not holding down the left mouse button, goes to the player

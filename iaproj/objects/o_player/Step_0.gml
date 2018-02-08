@@ -22,6 +22,7 @@ if(keyboard_check(vk_space) && bullet_timer==0){
 bullet_timer -= min(global.dt, bullet_timer);
 if(keyboard_check(vk_enter) && charge>0){
 	charge_timer += global.dt/(60*3);
+	charge -= charge_timer/30;
 }
 if(keyboard_check_released(vk_enter)){
 	#region bullet explosion
@@ -42,7 +43,6 @@ if(keyboard_check_released(vk_enter)){
 		var c = charge_timer/global.maxscale;
 		bul.image_xscale = charge_timer;
 		bul.image_yscale = charge_timer;
-		charge -= c*10;
 	}
 	charge_timer = 0;
 }
