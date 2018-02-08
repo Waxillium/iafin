@@ -48,12 +48,14 @@ if(w>h){
 	wid = (w-(scale*room_width));//draw the background colors ontop of the black bars on the sides of the game
 	draw_line_width_color(0, -1, 0, h+1, wid, bcolor, bcolor);
 	draw_line_width_color(wid+scale*room_width-1, -1, wid+scale*room_width-1, h+1, wid, bcolor, bcolor);
-	draw_rectangle_color(wid/2, 1, w-wid/2, h-2, lcolor, lcolor, lcolor, lcolor, true);
+	draw_rectangle_color(wid/2, 2, w-wid/2, h-2, lcolor, lcolor, lcolor, lcolor, true);
 } else if (h>w){
 	wid = (h-(scale*room_width));
 	draw_line_width_color(0, 0, w, 0, wid, bcolor, bcolor);
 	draw_line_width_color(0, wid+scale*room_height-1, w, wid+scale*room_height-1, wid, bcolor, bcolor);
-	draw_rectangle_color(0, wid/2, w, h-wid/2, lcolor, lcolor, lcolor, lcolor, true);
+	draw_rectangle_color(0, wid/2, w-1, h-wid/2, lcolor, lcolor, lcolor, lcolor, true);
+} else if (w==h){
+	draw_rectangle_color(1,1,w-2,h-2, lcolor, lcolor, lcolor, lcolor, true);
 }
 draw_set_color(c_white);
 draw_set_font(font0)
@@ -63,20 +65,21 @@ draw_text_transformed(5, strhei, str, scale, scale, 0);//draw the fps and score 
 #endregion
 #region draw the charge bar for the players charged bullets
 if(w>h){
-	var width = string_width(str)*scale;
 	var boxcol = merge_color(bcolor, c_black, .5);
+	var bwidth = 30;
 	var g = 142;
 	var b = 204;
-	var len = strhei - h/3 - 35;
+	var len = h/3;
 	var col1 = make_color_rgb(0, g, b);
 	var col2 = make_color_rgb(255, g, b);
-	draw_rectangle_color(5, h/3, width, strhei-5, boxcol, boxcol, boxcol, boxcol, false);
+	draw_rectangle_color(wid/2-bwidth, h/3, wid/2-5, h/3+len, boxcol, boxcol, boxcol, boxcol, false);
 	if(charge>0){
-		draw_rectangle_color(20, h/3+15, width-15, strhei-20, col1, col1, col2, col2, false);
-		draw_line_width_color(5, h/3+len/3+7, width-15, h/3+len/3+7, 15, boxcol, boxcol);
-		draw_line_width_color(5, h/3+len*2/3+7, width-15, h/3+len*2/3+7, 15, boxcol, boxcol);
+		draw_rectangle_color(wid/2-bwidth+3, h/3+3, wid/2-8, h/3+len-3, col1, col1, col2, col2, false);
 		var chargeleft = (30-charge)/30;
-		draw_rectangle_color(5, h/3, width, h/3+(chargeleft*len), boxcol, boxcol, boxcol, boxcol, false);
+		draw_line_width_color(wid/2-bwidth+2, h/3+len/3, wid/2-8, h/3+len/3, 2, boxcol, boxcol);
+		draw_line_width_color(wid/2-bwidth+2, h/3+len*2/3, wid/2-8, h/3+len*2/3, 2, boxcol, boxcol);
+		draw_rectangle_color(wid/2-bwidth+3, h/3+3, wid/2-8, h/3+(chargeleft*len), boxcol, boxcol, boxcol, boxcol, false);
+		
 	}
 }
 #endregion

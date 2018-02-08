@@ -21,12 +21,12 @@ if(keyboard_check(vk_space) && bullet_timer==0){
 }
 bullet_timer -= min(global.dt, bullet_timer);
 if(keyboard_check(vk_enter) && charge>0 && charge_timer<1){
-	charge_timer += global.dt/(60*2);
-	charge -= global.dt/(6*2);
+	charge_timer += global.dt/(60);
+	charge -= global.dt/(6);
 }
 if(keyboard_check_released(vk_enter)){
 	#region bullet explosion
-	if(charge_timer>=1){
+	if(charge_timer>=.999){
 		for(var i=0; i<global.explosiveness; i++){
 			var bul = instance_create_layer(x, y+1, "Instances", o_bullet_player);
 			var ang = (360/global.explosiveness*i) - 90;
