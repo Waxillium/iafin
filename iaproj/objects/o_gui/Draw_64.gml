@@ -43,6 +43,7 @@ if(!global.paused){
 	bcolor = o_background.color;
 	lcolor = o_player.color;
 	charge = o_player.charge;
+	charge_t = o_player.charge_timer;
 }
 if(w>h){
 	wid = (w-(scale*room_width));//draw the background colors ontop of the black bars on the sides of the game
@@ -65,7 +66,7 @@ draw_text_transformed(5, strhei, str, scale, scale, 0);//draw the fps and score 
 #endregion
 #region draw the charge bar for the players charged bullets
 if(w>h){
-	var boxcol = merge_color(bcolor, c_black, .5);
+	var boxcol = merge_color(bcolor, c_gray, .5);
 	var bwidth = 30;
 	var g = 142;
 	var b = 204;
@@ -79,7 +80,9 @@ if(w>h){
 		draw_line_width_color(wid/2-bwidth+2, h/3+len/3, wid/2-8, h/3+len/3, 2, boxcol, boxcol);
 		draw_line_width_color(wid/2-bwidth+2, h/3+len*2/3, wid/2-8, h/3+len*2/3, 2, boxcol, boxcol);
 		draw_rectangle_color(wid/2-bwidth+3, h/3+3, wid/2-8, h/3+(chargeleft*len), boxcol, boxcol, boxcol, boxcol, false);
-		
 	}
+	draw_rectangle_color(w-wid/2+5, h/3, w-wid/2+bwidth+5, h/3+len, boxcol, boxcol, boxcol, boxcol, false);
+	if(charge_t>0)	draw_rectangle_color(w-wid/2+8, h/3+len-(charge_t*len-3), w-wid/2+bwidth+2, h/3+len-3, col1, col1, col2, col2, false);
+	
 }
 #endregion
