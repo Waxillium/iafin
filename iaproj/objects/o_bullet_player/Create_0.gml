@@ -6,3 +6,4 @@ image_yscale = 1/20;
 xvel = 0;
 yvel = -6;
 damage = 1;
+depth = 51;

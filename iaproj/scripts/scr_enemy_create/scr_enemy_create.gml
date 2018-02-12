@@ -5,6 +5,8 @@
 /// @param enemy
 //creates the enemy object
 var en = instance_create_layer(argument[0], argument[1], "Instances", argument[2]);
-//en.creator = list;
-//ds_list_add(list, en);
+if(instance_exists(o_wave)){
+	en.creator = list;
+	ds_list_add(list, en);
+}
 return en;

@@ -6,10 +6,18 @@
 ///@param enemy4*
 ///@param enemy5*
 if(timer==0){
-	cur_enemy = argument[0]++;
-	for(var i = 0; i < 6; i++){
-		scr_enemy_create(x, y, cur_enemy);
+	var cur = 0;
+	cur_enemy = argument[cur];
+	for(var i = 1; i<4; i++){
+		for(var j = 0; j<3; j++){
+			if(i==1 && j!=2)	scr_enemy_create(x+12*(j+1), y+10, cur_enemy);
+			else if(i==2)	scr_enemy_create(x+6+(j*12), y+18, cur_enemy);
+			else if(i==3 && j!=2)	scr_enemy_create(x+12+(j*12), y+26, cur_enemy);
+		}
 	}
-	if(cur_enemy>argument_count) cur_enemy = argument[0];
-	timer = 60*3;
+	if(argument_count>0){
+		cur++;
+		if(cur+1>argument_count)	cur = 0;
+	}
+	timer = 60/spawnrate;
 }
