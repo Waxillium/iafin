@@ -1,1 +1,1 @@
-ds_list_delete(creator, ds_list_find_index(creator, self));
+if(creator!=noone)	ds_list_delete(creator, ds_list_find_index(creator, self));

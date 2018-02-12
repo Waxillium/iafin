@@ -1,4 +1,4 @@
-last = scr_wave_create(tl_wave1);
+//last = scr_wave_create(tl_wave1);
 wavenum = 0;
 current_wave = tl_wave1;
 easy = [tl_wave1, tl_wave2, tl_wave3];

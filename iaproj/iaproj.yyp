@@ -263,6 +263,14 @@
             }
         },
         {
+            "Key": "69eb0804-fc3d-4d92-b642-e660d4c609d3",
+            "Value": {
+                "id": "0c9e3ae4-cda6-4102-9d2d-06ef8351e0d1",
+                "resourcePath": "scripts\\scr_boss_create\\scr_boss_create.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "6af11d13-da3b-4bc7-8970-7d158c27a3a8",
             "Value": {
                 "id": "38337445-1beb-4856-9304-5ecb73fe22e3",
@@ -591,6 +599,14 @@
             }
         },
         {
+            "Key": "c6c65e2a-8f48-4ee3-bf5f-2973873179c5",
+            "Value": {
+                "id": "515c7c42-9393-456c-9ebc-a4f893c1e91a",
+                "resourcePath": "objects\\o_boss_spawner\\o_boss_spawner.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "cc98d028-7bdd-4680-85f3-c87a7baa481e",
             "Value": {
                 "id": "e11e8a83-3d24-40a0-99e6-0807e110ee8a",
@@ -661,7 +677,8 @@
         "25e5cc0d-e1e6-468d-aa12-2efa7aec78ed",
         "aac6371b-f781-4fbf-8de4-9d5c2da7c11c",
         "6af11d13-da3b-4bc7-8970-7d158c27a3a8",
-        "95e15b0d-be13-4a69-b01e-c1fd79d4317e"
+        "95e15b0d-be13-4a69-b01e-c1fd79d4317e",
+        "69eb0804-fc3d-4d92-b642-e660d4c609d3"
     ],
     "tutorial": ""
 }
