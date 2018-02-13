@@ -1,0 +1,1 @@
+scr_enemy_create(room_height/2-s_spawner.sprite_width/2, -100, o_boss_spawner); 

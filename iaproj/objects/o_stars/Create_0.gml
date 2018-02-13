@@ -1,7 +1,7 @@
 #region create particle system
 timer = 0;
 stars = part_system_create_layer("Instances", false); 
-part_system_depth(stars, 50); 
+part_system_depth(stars, 52); 
 part_system_automatic_update(stars, false); 
 #endregion
 #region create a star particle 

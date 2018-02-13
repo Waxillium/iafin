@@ -1,4 +1,4 @@
-/*if(!instance_exists(o_wave)){
+if(!instance_exists(o_wave)){
 	wavenum++;
 	if(wavenum<el){
 		current_wave = easy[wavenum];

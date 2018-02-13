@@ -36,7 +36,7 @@
                     "LayerId": "ca708a21-b2de-413b-997d-74e9ebe1ac2d"
                 },
                 {
-                    "id": "09204caf-862e-4a10-8580-5f32c6673702",
+                    "id": "3fe936f5-e959-442f-95eb-5beac9cd22e7",
                     "modelName": "GMSpriteImage",
                     "mvc": "1.0",
                     "FrameId": "4224a7e8-4aaf-4147-8060-5dd31ecdd8ef",
@@ -58,7 +58,7 @@
             "isLocked": false,
             "name": "Layer 1",
             "opacity": 100,
-            "visible": true
+            "visible": false
         },
         {
             "id": "ca708a21-b2de-413b-997d-74e9ebe1ac2d",

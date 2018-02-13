@@ -143,6 +143,14 @@
             }
         },
         {
+            "Key": "36a9ac69-67e5-4fae-b0f4-921f24a2ec35",
+            "Value": {
+                "id": "33420042-9c1b-471f-afb5-58df20125548",
+                "resourcePath": "timelines\\tl_boss1\\tl_boss1.yy",
+                "resourceType": "GMTimeline"
+            }
+        },
+        {
             "Key": "37ce13b4-e64b-4a0f-b9ef-f8bc3262017f",
             "Value": {
                 "id": "37959881-cf80-4204-8303-93a6e591f566",
@@ -266,7 +274,7 @@
             "Key": "69eb0804-fc3d-4d92-b642-e660d4c609d3",
             "Value": {
                 "id": "0c9e3ae4-cda6-4102-9d2d-06ef8351e0d1",
-                "resourcePath": "scripts\\scr_boss_create\\scr_boss_create.yy",
+                "resourcePath": "scripts\\scr_boss_spawn\\scr_boss_spawn.yy",
                 "resourceType": "GMScript"
             }
         },
