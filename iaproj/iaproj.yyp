@@ -639,6 +639,14 @@
             }
         },
         {
+            "Key": "e11ad784-4abc-4c30-be5a-753d70a890c1",
+            "Value": {
+                "id": "2e89c43b-137e-4496-9385-6860334cd254",
+                "resourcePath": "objects\\o_diver_horizontal\\o_diver_horizontal.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "f342c343-6df7-443f-b96a-7245a8991b21",
             "Value": {
                 "id": "0de2fea4-1a08-4ac3-8725-ea1903ab65dd",

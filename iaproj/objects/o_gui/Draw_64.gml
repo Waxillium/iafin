@@ -83,7 +83,7 @@ if(w>h){
 	}
 	draw_rectangle_color(w-wid/2+5, h/3, w-wid/2+bwidth+5, h/3+len, boxcol, boxcol, boxcol, boxcol, false);
 	if(charge_t>0){
-		if(charge_t>=.999){ col1 = merge_color(col1, c_white, .5); col2 = merge_color(col2, c_white, .5); }
+		if(charge_t>=1){ col1 = merge_color(col1, c_white, .5); col2 = merge_color(col2, c_white, .5); }
 			draw_rectangle_color(w-wid/2+8, h/3+len-(charge_t*(len-6))-3, w-wid/2+bwidth+2, h/3+len-3, col1, col1, col2, col2, false);
 	}
 }
@@ -105,7 +105,7 @@ if(h>w){
 	}
 	draw_rectangle_color(w/3, h-wid/2+5, w/3+len, h-wid/2+bwidth+5, boxcol, boxcol, boxcol, boxcol, false);
 	if(charge_t>0){
-		if(charge_t>=.999){ col1 = merge_color(col1, c_white, .5); col2 = merge_color(col2, c_white, .5); }
+		if(charge_t>=1){ col1 = merge_color(col1, c_white, .5); col2 = merge_color(col2, c_white, .5); }
 		draw_rectangle_color(w/3+3, h-wid/2+8, w/3+3+(charge_t*(len-6)), h-wid/2+bwidth+2, col2, col1, col1, col2, false);
 	}
 }
