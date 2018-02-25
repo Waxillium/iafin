@@ -1,33 +1,23 @@
 {
-    "id": "5ba64e5a-705c-4e53-b68a-c154c12a465d",
+    "id": "b1ae9b75-95c1-489d-89d5-c4f58830d6f2",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "o_game_controller",
+    "name": "o_shooter_3s",
     "eventList": [
         {
-            "id": "2c2d25ba-4bd5-4216-92d1-dda190de4df5",
+            "id": "1d736e4e-7e97-40ed-91ac-7b1ed5493470",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "5ba64e5a-705c-4e53-b68a-c154c12a465d"
-        },
-        {
-            "id": "f1f48061-a7de-48a9-a02a-322fe77f7add",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 1,
-            "eventtype": 3,
-            "m_owner": "5ba64e5a-705c-4e53-b68a-c154c12a465d"
+            "m_owner": "b1ae9b75-95c1-489d-89d5-c4f58830d6f2"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "parentObjectId": "c4223b92-0d4f-4894-bb9a-7e8a45349d8d",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -43,6 +33,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "00000000-0000-0000-0000-000000000000",
+    "spriteId": "45cf00bc-828d-498a-a9aa-ca8b4795c397",
     "visible": true
 }

@@ -1,33 +1,23 @@
 {
-    "id": "5ba64e5a-705c-4e53-b68a-c154c12a465d",
+    "id": "c8c5f60c-5569-46e1-8dc8-fd135a3b30cd",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "o_game_controller",
+    "name": "o_diver_wiggler",
     "eventList": [
         {
-            "id": "2c2d25ba-4bd5-4216-92d1-dda190de4df5",
+            "id": "ef296ad1-86cf-444e-a798-d08f18ee6a8b",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "5ba64e5a-705c-4e53-b68a-c154c12a465d"
-        },
-        {
-            "id": "f1f48061-a7de-48a9-a02a-322fe77f7add",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 1,
-            "eventtype": 3,
-            "m_owner": "5ba64e5a-705c-4e53-b68a-c154c12a465d"
+            "m_owner": "c8c5f60c-5569-46e1-8dc8-fd135a3b30cd"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "parentObjectId": "c3bad219-6a7d-4e87-8014-0280fb844640",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -43,6 +33,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "00000000-0000-0000-0000-000000000000",
+    "spriteId": "ce915dba-31ad-42db-a22f-8393ae7aa3c9",
     "visible": true
 }

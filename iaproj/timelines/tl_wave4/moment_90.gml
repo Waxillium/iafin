@@ -1,4 +1,4 @@
-spawn = 3;
+spawn = 2;
 offset = 5;
-enemy = o_diver_shooter_2;
+enemy = o_shooter_2;
 scr_wave_place(spawn, offset, enemy);

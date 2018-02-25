@@ -5,8 +5,7 @@
     "name": "04920bf5-4120-418e-aef6-637481540880",
     "children": [
         "5fb2f0c0-d2bf-4640-a8c9-8f71a0735ecf",
-        "b8b71815-38e3-4395-b60b-27a8a3026224",
-        "24abe0d0-c28d-4f5d-9d7b-ab078c31c672"
+        "b8b71815-38e3-4395-b60b-27a8a3026224"
     ],
     "filterType": "GMTimeline",
     "folderName": "timelines",

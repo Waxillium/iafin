@@ -3,7 +3,7 @@ global.dt = delta_time*(60/1000000);//time in minutes between frames
 if(global.paused && keyboard_check_pressed(ord("R"))){
 	instance_activate_all();
 	sprite_delete(global.pause_sprite);
-	game_restart();
+	room_restart();
 	global.time = 0;
 } else if(global.paused && keyboard_check_pressed(ord("E"))){
 	room_goto(r_menu);

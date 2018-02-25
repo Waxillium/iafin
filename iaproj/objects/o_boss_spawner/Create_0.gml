@@ -1,6 +1,6 @@
 // Inherit the parent event
 event_inherited();
-hp = 250;
+hp = 450;
 spawnrate = 1;
 timer = 60*3;
 cur_enemy = noone;
