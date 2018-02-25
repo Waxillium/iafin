@@ -18,8 +18,8 @@ if(global.paused){//if paused, display what was last on screen
 		var offset =  h - scale*room_height;
 		draw_sprite_stretched(global.pause_sprite, 0, 0, offset/2, w, scale*room_height); 
 	}
-	var pline = "[GAME PAUSED]\nESC TO RESUME\nR TO RESTART";
-	var gline = "[GAME OVER]\nR TO RESTART\nSCORE: "+ string(global.points);
+	var pline = "[GAME PAUSED]\nESC TO RESUME\nR TO RESTART\nE TO GO TO MAIN MENU";
+	var gline = "[GAME OVER]\nR TO RESTART\nE TO GO TO MAIN MENU\nSCORE: "+ string(global.points);
 	draw_set_font(font0);
 	draw_set_halign(fa_center);
 	draw_set_color(c_white);
