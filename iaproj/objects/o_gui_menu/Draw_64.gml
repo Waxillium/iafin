@@ -36,8 +36,8 @@ if(room == r_instructions){
 	var u = (keyboard_check_pressed(vk_up));
 	var e = (keyboard_check_pressed(vk_enter));
 	var l1 = 108;
-	var l2 = display_get_gui_height()/2-string_height("INSTRUCTIONS")*scale/2;
-	var l3 = display_get_gui_height()-108-string_height("EXIT")*scale;
+	var l2 = h/2-string_height("INSTRUCTIONS")*scale/2;
+	var l3 = h-108-string_height("EXIT")*scale;
 	cur += d;
 	cur -= u;
 	if(cur > 3)	cur = 1;
@@ -45,12 +45,19 @@ if(room == r_instructions){
 	if(cur == 1) go = l1;
 	if(cur == 2) go = l2;
 	if(cur == 3) go = l3;
-	draw_sprite_ext(s_arrow, 0, wid/2+36, go-(sprite_get_height(s_arrow)/3), scale, scale, 0, boxcol, 1);
-	draw_text_transformed(wid/2+40+sprite_get_width(s_arrow)*scale, l1, "START", scale, scale, 0);
-	draw_text_transformed(wid/2+40+sprite_get_width(s_arrow)*scale, l2, "INSTRUCTIONS", scale, scale, 0);
-	draw_text_transformed(wid/2+40+sprite_get_width(s_arrow)*scale, l3, "EXIT", scale, scale, 0);
+	if(w>h || w==h){
+		draw_sprite_ext(s_arrow, 0, wid/2+36, go-(sprite_get_height(s_arrow)/3), scale, scale, 0, boxcol, 1);
+		draw_text_transformed(wid/2+40+sprite_get_width(s_arrow)*scale, l1, "START", scale, scale, 0);
+		draw_text_transformed(wid/2+40+sprite_get_width(s_arrow)*scale, l2, "INSTRUCTIONS", scale, scale, 0);
+		draw_text_transformed(wid/2+40+sprite_get_width(s_arrow)*scale, l3, "EXIT", scale, scale, 0);
+	} else if(h>w){
+		draw_sprite_ext(s_arrow, 0, 36, wid/2+go-(sprite_get_height(s_arrow)/3), scale, scale, 0, boxcol, 1);
+		draw_text_transformed(40+sprite_get_width(s_arrow)*scale, wid/2+l1, "START", scale, scale, 0);
+		draw_text_transformed(40+sprite_get_width(s_arrow)*scale, l2, "INSTRUCTIONS", scale, scale, 0);
+		draw_text_transformed(40+sprite_get_width(s_arrow)*scale, l3-wid/2, "EXIT", scale, scale, 0);
+	}
 	if(e){
-		if(go==l1) room_goto(room0);
+		if(go==l1) room_goto(r_game);
 		if(go==l2) room_goto(r_instructions);
 		if(go==l3) game_end();
 	}

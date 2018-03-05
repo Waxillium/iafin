@@ -65,7 +65,7 @@ for(var i = 0; i<ds_list_size(trail)-1; i++){
 	ds_list_set(trail, i, temp);
 }
 #endregion
-/*#region pause the game if shot or hit
+#region pause the game if shot or hit
 if(place_meeting(x,y,o_enemy_parent) || place_meeting(x,y,o_bullet)){
 	scr_pause();
 	global.gameover = true;
