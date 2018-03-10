@@ -26,7 +26,7 @@ if(w>h){
 draw_set_color(boxcol);
 draw_set_font(font0);
 if(room == r_instructions){
-	var str = "[W][A][S][D] OR ARROW KEYS TO MOVE\n\nSPACE TO SHOOT\n\nHOLD [ENTER] TO CHARGE A MORE POWERFUL SHOT, AND \nRELEASE ENTER TO RELEASE THE BLAST\n\nPRESS[ESC] TO PAUSE\n\nPRESS [R] WHEN PAUSED TO RESTART\n\nPRESS E WHEN PAUSED TO RETURN TO MAIN MENU\n\nPRESS [ESC] WHEN PAUSED TO RESUME\n\nPRESS [ESC] TO GO BACK TO THE MAIN MENU";
+	var str = "[W][A][S][D] OR ARROW KEYS TO MOVE\n\nSPACE TO SHOOT\n\nHOLD [ENTER] TO CHARGE A MORE POWERFUL SHOT, AND \nRELEASE ENTER TO RELEASE THE BLAST\n\nPRESS [ESC] TO PAUSE\n\nPRESS [R] WHEN PAUSED TO RESTART\n\nPRESS E WHEN PAUSED TO RETURN TO MAIN MENU\n\nPRESS [ESC] WHEN PAUSED TO RESUME\n\nPRESS [ESC] TO GO BACK TO THE MAIN MENU";
 	draw_text_transformed(wid/2+5, 5, str, scale, scale, 0);//draw the instructions onto the screen
 	if(keyboard_check_pressed(vk_escape)){
 		room_goto(r_menu);	
@@ -35,26 +35,36 @@ if(room == r_instructions){
 	var d = (keyboard_check_pressed(vk_down));
 	var u = (keyboard_check_pressed(vk_up));
 	var e = (keyboard_check_pressed(vk_enter));
-	var l1 = 108;
-	var l2 = h/2-string_height("INSTRUCTIONS")*scale/2;
-	var l3 = h-108-string_height("EXIT")*scale;
-	cur += d;
-	cur -= u;
-	if(cur > 3)	cur = 1;
-	if(cur < 1)	cur = 3;
-	if(cur == 1) go = l1;
-	if(cur == 2) go = l2;
-	if(cur == 3) go = l3;
 	if(w>h || w==h){
-		draw_sprite_ext(s_arrow, 0, wid/2+36, go-(sprite_get_height(s_arrow)/3), scale, scale, 0, boxcol, 1);
-		draw_text_transformed(wid/2+40+sprite_get_width(s_arrow)*scale, l1, "START", scale, scale, 0);
-		draw_text_transformed(wid/2+40+sprite_get_width(s_arrow)*scale, l2, "INSTRUCTIONS", scale, scale, 0);
-		draw_text_transformed(wid/2+40+sprite_get_width(s_arrow)*scale, l3, "EXIT", scale, scale, 0);
+		var l1 = 108;
+		var l2 = h/2-string_height("INSTRUCTIONS")/2;
+		var l3 = h-108-string_height("EXIT")/2;
+		cur += d;
+		cur -= u;
+		if(cur > 3)	cur = 1;
+		if(cur < 1)	cur = 3;
+		if(cur == 1) go = l1;
+		if(cur == 2) go = l2;
+		if(cur == 3) go = l3;
+		draw_sprite_ext(s_arrow, 0, wid/2+36 + sprite_get_width(s_arrow), go, scale, scale, 0, boxcol, 1);
+		draw_text_transformed(wid/2+40 + sprite_get_width(s_arrow), l1, "START", scale, scale, 0);
+		draw_text_transformed(wid/2+40 + sprite_get_width(s_arrow), l2, "INSTRUCTIONS", scale, scale, 0);
+		draw_text_transformed(wid/2+40 + sprite_get_width(s_arrow), l3, "EXIT", scale, scale, 0);
 	} else if(h>w){
-		draw_sprite_ext(s_arrow, 0, 36, wid/2+go-(sprite_get_height(s_arrow)/3), scale, scale, 0, boxcol, 1);
-		draw_text_transformed(40+sprite_get_width(s_arrow)*scale, wid/2+l1, "START", scale, scale, 0);
-		draw_text_transformed(40+sprite_get_width(s_arrow)*scale, l2, "INSTRUCTIONS", scale, scale, 0);
-		draw_text_transformed(40+sprite_get_width(s_arrow)*scale, l3-wid/2, "EXIT", scale, scale, 0);
+		var l1 = wid/2+108;
+		var l2 = h/2-string_height("INSTRUCTIONS")/2;
+		var l3 = h-wid/2-108-string_height("EXIT")/2;
+		cur += d;
+		cur -= u;
+		if(cur > 3)	cur = 1;
+		if(cur < 1)	cur = 3;
+		if(cur == 1) go = l1;
+		if(cur == 2) go = l2;
+		if(cur == 3) go = l3;
+		draw_sprite_ext(s_arrow, 0, 36, go, scale, scale, 0, boxcol, 1);
+		draw_text_transformed(40, l1, "START", scale, scale, 0);
+		draw_text_transformed(40, l2, "INSTRUCTIONS", scale, scale, 0);
+		draw_text_transformed(40, l3, "EXIT", scale, scale, 0);
 	}
 	if(e){
 		if(go==l1) room_goto(r_game);
