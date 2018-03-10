@@ -6,6 +6,7 @@ if(global.paused && keyboard_check_pressed(ord("R"))){
 	room_restart();
 	global.time = 0;
 } else if(global.paused && keyboard_check_pressed(ord("E"))){
+	scr_pause();
 	room_goto(r_menu);
 }
 if(!global.paused) global.time += global.dt/60;
