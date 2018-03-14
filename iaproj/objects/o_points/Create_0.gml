@@ -1,1 +1,1 @@
-timer = 10*60;//10 seconds
+timer = 6*60;//6 seconds

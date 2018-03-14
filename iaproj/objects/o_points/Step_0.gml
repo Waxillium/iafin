@@ -9,3 +9,8 @@ if(!keyboard_check(vk_space)){
 	x = lerp(x, o_player.x, .6 * global.dt);
 	y = lerp(y, o_player.y, .6 * global.dt);
 }
+//if the player does not collect it within the timer amount, disappear
+if(timer<=0){
+	instance_destroy();	
+}
+timer -= global.dt;

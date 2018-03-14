@@ -26,7 +26,7 @@ if(w>h){
 draw_set_color(boxcol);
 draw_set_font(font0);
 if(room == r_instructions){
-	var str = "[W][A][S][D] OR ARROW KEYS TO MOVE\n\nSPACE TO SHOOT\n\nHOLD [ENTER] TO CHARGE A MORE POWERFUL SHOT, AND \nRELEASE ENTER TO RELEASE THE BLAST\n\nPRESS [ESC] TO PAUSE\n\nPRESS [R] WHEN PAUSED TO RESTART\n\nPRESS E WHEN PAUSED TO RETURN TO MAIN MENU\n\nPRESS [ESC] WHEN PAUSED TO RESUME\n\nPRESS [ESC] TO GO BACK TO THE MAIN MENU";
+	var str = "[W][A][S][D] OR ARROW KEYS TO MOVE\n\nHOLD [SHIFT] TO MOVE SLOWER\n\nSPACE TO SHOOT\n\nHOLD [ENTER] TO CHARGE A MORE POWERFUL SHOT, AND \nRELEASE ENTER TO RELEASE THE BLAST\n\nPRESS [ESC] TO PAUSE\n\nPRESS [R] WHEN PAUSED TO RESTART\n\nPRESS [E] WHEN PAUSED TO RETURN TO MAIN MENU\n\nPRESS [ESC] WHEN PAUSED TO RESUME\n\nPRESS [ESC] TO GO BACK TO THE MAIN MENU";
 	draw_text_transformed(wid/2+5, 5, str, scale, scale, 0);//draw the instructions onto the screen
 	if(keyboard_check_pressed(vk_escape)){
 		room_goto(r_menu);	
